@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<nav>
+	<div class="container">
+		<a href="#" class="logo">Bean&Bean</a>
+		<ul>
+			<li><a href="#" class="active" style="color: #000;">Home</a></li>
+			<li><a href="abt.html">About</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="hero">
+	<div class="container">
+		<h1>Bean & Bean</h1>
+		<p>Make it with you</p>
+	</div>
+</div>
+<div class="container content">
+	<h2></h2>
+        <div class="p1"><p><b>Bean & Bean</b></p></div>
+	<p>Head on over to Bean & Bean! Drink coffee while listening to your favorite Filipino artists!</p>
+</div>
+
+<div class="gyat">
+<img src="https://i.pinimg.com/564x/6f/08/73/6f0873a70d373f4d3840275fa4b717f7.jpg" style="width: 400px; height: 500px;        position: absolute; bottom: 0; right: 0; top: 610px; left: 900px; ">
+</div>
+<script>
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', fixNav);
+
+function fixNav() {
+    if(window.scrollY > nav.offsetHeight + 150) {
+        nav.classList.add('active');
+    } else {
+        nav.classList.remove('active');
+    }
+}</script>

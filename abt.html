@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	color: #222;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    padding-bottom: 50px;
+}
+
+nav {
+    background: linear-gradient(to left, #ac7339 0%, #4d3319 100%);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+}
+nav.active {
+    background: #ffe066;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+nav .container {
+    align-items: center;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+}
+
+nav.active .container {
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav a {
+    color: #fff;
+    padding: 7px 15px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+nav li a:hover {
+    background-color: #ffe066;
+    color: #000;
+}
+
+nav.active a {
+    color: #000;
+    padding: 7px 10px;
+}
+
+nav.active li a:hover {
+    background: #ac7339;
+    color: #fff;
+}
+
+nav a.active {
+    background-color: #ffe066;
+    color: #fff;
+}
+
+.hero {
+    align-items: center;
+    background-image: url('cof.png');
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    display: flex;
+    height: calc(100vh - 30px);
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    z-index: -2;
+}
+
+.hero::before {
+    content: ' ';
+    background-color: rgba(0, 0, 0, 0.3);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.content h2 {
+    font-size: 200%;
+    position: absolute;
+    top: 650px;
+    background: #ffe066;
+    right: 30%;
+    width: 1000px;
+    font-family: helvetica;
+    color: #4d3319;
+    height: 400px;
+    text-align: center;
+    border-radius: 7px;
+    margin: 10px 0;
+}
+
+.content h3 {
+    font-size: 150%;
+    position: absolute;
+    background: #ffe066;
+    width: 1000
+    margin: 10px 0;
+}
+
+.content h4 {
+    font-size: 150%;
+    position: absolute;
+    top: 10000px;
+    background: #ffe066;
+    right: 30%;
+    width: 1000px;
+    font-family: helvetica;
+    color: #4d3319;
+    height: 400px;
+    text-align: center;
+    border-radius: 7px;
+    margin: 10px 0;
+
+}
+
+.p1 {
+    color: #4d3319;
+    font-size: 30px;
+    position: absolute;
+    top : -70px;
+    left: 8%;
+    width: 500px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+
+}
+.content p {
+    color: #4d3319;
+    position: absolute;
+    top: 777px;
+    left: 13%;
+    width: 500px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+</style>
+<nav>
+	<div class="container">
+		<a href="index.html" class="logo">Bean&Bean</a>
+		<ul>
+			<li><a href="index.html" class="active" style="color: #000;">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="hero">
+	<div class="container">
+		<h1>Bean & Bean</h1>
+		<p>Make it with you</p>
+	</div>
+</div>
+<div class="container content">
+	<h2>
+        <b>Bean & Bean</b></h2>
+	<p>Head on over to Bean & Bean! Drink coffee while listening to your favorite Filipino artists!</p>
+        <h4 style="font-size: 150%;
+    position: absolute;
+    top: 1250px;
+    background: #ffe066;
+    left: 30%;
+    width: 1000px;
+    font-family: helvetica;
+    color: #4d3319;
+    height: 400px;
+    text-align: center;
+    border-radius: 7px;
+    margin: 10px 0;"> </h4>
+
+    <p style="
+    font-size: 40px;
+    color: #4d3319;
+    position: absolute;
+    top: 1400px;
+    left: 48%;
+    width: 500px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+"><b>Here is our Menu !<b></p>
+</div>
+
+<div class="gyat">
+<img src="https://i.pinimg.com/564x/6f/08/73/6f0873a70d373f4d3840275fa4b717f7.jpg" style="width: 400px; height: 500px;        position: absolute; bottom: 0; right: 0; top: 610px; left: 900px; ">
+<img src="menu.jpg" style="width: 400px; height: 550px; position: absolute; bottom: 0; left: 40px; top: 1200px; ; ">
+</div>
+<script>
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', fixNav);
+
+function fixNav() {
+    if(window.scrollY > nav.offsetHeight + 150) {
+        nav.classList.add('active');
+    } else {
+        nav.classList.remove('active');
+    }
+}</script>
